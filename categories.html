@@ -34,6 +34,19 @@
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/overrides.css">
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <style>
+  	.ui-collapsible-content .ui-btn-inner .ui-btn-text {
+  		font-style: italic;
+  		font-weight: normal;
+  		font: italic 14px Georgia,'Times',serif;
+  		color: #585A5D;
+  		text-transform: none;
+  	}
+  	h3.ui-collapsible-heading {
+  		font-style: normal;
+  		font-weight: bold
+  	}
+  </style>
 </head>
 
 <body>
@@ -57,53 +70,11 @@
 	<input type="search" name="search" id="searc-basic" value="" placeholder="search by keyword" data-mini="true" />
 
 	<br class="clearBoth" />
+			<div data-role="collapsible-set">
+				<div class="productDescription" data-role="collapsible" data-theme="d" data-content-theme="d">
+					<h3>Women's Clothing</h3>
 
-	<div class="slidewrap" data-autorotate="5000">
-		<ul class="slider" id="sliderName">
-			<li class="slide"><img class="sliderImage" src="images/banner_06.jpg" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_12.jpg" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_08.jpg" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_10.jpg" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_07.jpg" /></li>
-		</ul>
-		<ul class="slidecontrols">
-			<li><a href="#sliderName" class="next">Next</a></li>
-			<li><a href="#sliderName" class="prev">Prev</a></li>
-		</ul>
-	</div>
-
-	<!--<div class="slidewrap2">
-		<ul class="slider">
-			<li class="slide"><img class="sliderImage" src="images/banner_01.png" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_02.png" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_03.png" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_04.png" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_05.jpg" /></li>
-		</ul>
-	</div>-->
-
-	<!--<div class="slidewrap3">
-		<ul class="slider">
-			<li class="slide"><img class="sliderImage" src="images/banner_01.png" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_02.png" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_03.png" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_04.png" /></li>
-			<li class="slide"><img class="sliderImage" src="images/banner_05.jpg" /></li>
-		</ul>
-	</div>-->
-
-		<br class="clearBoth" />
-
-		<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e" data-count-theme="b">
-			<li>
-				<a href="index.html" data-ajax="false">
-					<!--<img class="thumbnail" src="images/32/list_bullets.png" />-->
-					<span class="indexOptions">Categories</span>
-					<!--<p></p>-->
-				</a>
-				<ul>
-					<li data-theme="e">Women's Clothing
-						<ul>
+						<ul data-role="listview" data-inset="false">
 							<li data-theme="e"><a href="pages/womens-shirts-and-tops.html">Shirts & Tops<span class="ui-li-count">4</span></a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Dresses</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Swimwear</a></li>
@@ -112,9 +83,13 @@
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Jeans</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Pants</a></li>
 						</ul>
-					</li>
-					<li>Women's Shoes
-						<ul>
+
+				</div>
+
+				<div class="productDescription" data-role="collapsible" data-theme="d" data-content-theme="d">
+					<h3>Women's Shoes</h3>
+
+						<ul data-role="listview" data-inset="false">
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Sandals</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Heels</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Sneakers & Athletic Shoes</a></li>
@@ -123,9 +98,15 @@
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Clogs & Mules</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Loafers</a></li>
 						</ul>
-					</li>
-					<li data-theme="e">Men's Clothing
-						<ul>
+
+				</div>
+
+
+
+				<div class="productDescription" data-role="collapsible" data-theme="d" data-content-theme="d">
+					<h3>Men's Clothing</h3>
+
+						<ul data-role="listview" data-inset="false">
 							<li data-theme="e"><a href="pages/mens-clothing.html">Shirts & Tops<span class="ui-li-count">4</span></a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Swimwear</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Shorts</a></li>
@@ -133,9 +114,16 @@
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Pants</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Coats & Outerwear</a></li>
 						</ul>
-					</li>
-					<li data-theme="e">Men's Shoes
-						<ul>
+
+				</div>
+
+
+
+
+				<div class="productDescription" data-role="collapsible" data-theme="d" data-content-theme="d">
+					<h3>Men's Shoes</h3>
+
+						<ul data-role="listview" data-inset="false">
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Sneakers & Athletic Shoes</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Boots</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Loafers</a></li>
@@ -143,9 +131,16 @@
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Oxfords</a></li>
 							<li data-theme="e"><a href="pages/boat-shoes.html"><span class="ui-li-count">2</span>Boat Shoes</a></li>
 						</ul>
-					</li>
-					<li>Accessories
-						<ul>
+
+				</div>
+
+
+
+
+				<div class="productDescription" data-role="collapsible" data-theme="d" data-content-theme="d">
+					<h3>Accessories</h3>
+
+						<ul data-role="listview" data-inset="false">
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Hats</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Belts</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Tech Accessories</a></li>
@@ -155,17 +150,32 @@
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Ties</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Umbrellas</a></li>
 						</ul>
-					</li>
-					<li>Watches
-						<ul>
+
+				</div>
+
+
+
+
+				<div class="productDescription" data-role="collapsible" data-theme="d" data-content-theme="d">
+					<h3>Watches</h3>
+
+						<ul data-role="listview" data-inset="false">
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Fashion Watches</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Casual Watches</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Sport Watches</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Luxury Watches</a></li>
 						</ul>
-					</li>
-					<li>Jewelry
-						<ul>
+
+				</div>
+
+
+
+
+
+				<div class="productDescription" data-role="collapsible" data-theme="d" data-content-theme="d">
+					<h3>Jewelry</h3>
+
+						<ul data-role="listview" data-inset="false">
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Necklaces</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Bracelets</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Earrings</a></li>
@@ -174,36 +184,22 @@
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Cufflinks</a></li>
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Jewelry Boxes & Cleaners</a></li>
 						</ul>
-					</li>
-					<li data-theme="e">Eyewear
-						<ul>
+
+				</div>
+
+
+
+
+				<div class="productDescription" data-role="collapsible" data-theme="d" data-content-theme="d">
+					<h3>Eyewear</h3>
+
+						<ul data-role="listview" data-inset="false">
 							<li><!--<a href="index.html" data-ajax="false">--><a href="#popup" data-rel="dialog">Goggles</a></li>
 							<li data-theme="e"><a href="pages/sunglasses.html">Sunglasses<span class="ui-li-count">2</span></a></li>
 						</ul>
-					</li>
-				</ul>
-			</li>
-			<li><a href="index.html" data-ajax="false">
-				<!--<img class="thumbnail" src="images/32/shopping_cart.png" />-->
-				<span class="indexOptions">Shopping Cart</span>
-				<!--<p></p>-->
-			</a></li>
-			<li><a href="index.html" data-ajax="false">
-				<!--<img class="thumbnail" src="images/32/my_account.png" />-->
-				<span class="indexOptions">Your Account</span>
-				<!--<p></p>-->
-			</a></li>
-			<li><a href="index.html" data-ajax="false">
-				<!--<img class="thumbnail" src="images/48/info_black.png" />-->
-				<span class="indexOptions">Information</span>
-				<!--<p></p>-->
-			</a></li>
-			<li><a href="index.html" data-ajax="false">
-				<!--<img class="thumbnail" src="images/48/help_black.png" />-->
-				<span class="indexOptions">Help</span>
-				<!--<p></p>-->
-			</a></li>
-		</ul>
+
+				</div>
+			</div>
 
 	</div><!-- /content -->
 
@@ -221,11 +217,6 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-	<script src="js/plugin.js"></script>
-	<script>
-	$(document).ready(function(){$('.slidewrap').carousel({slider:'.slider',slide:'.slide',slideHed:'.slidehed',nextSlide:'.next',prevSlide:'.prev',addPagination:true,addNav:false});$('.slidewrap3').carousel({namespace:"mr-rotato"}).bind({'mr-rotato-beforemove':function(){$('.events').append("<li>?beforemove? event fired.</li>");},'mr-rotato-aftermove':function(){$('.events').append("<li>?aftermove? event fired.</li>");}})});
-	</script>
-
 	<script src="http://code.jquery.com/mobile/1.1.1-rc.1/jquery.mobile-1.1.1-rc.1.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery.mobile-1.1.1-rc.1.min.js"><\/script>')</script>
 	<script src="js/json.js"></script>
